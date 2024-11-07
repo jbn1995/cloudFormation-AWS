@@ -1,0 +1,10 @@
+Resources:
+  SimpleEC2Instance:
+    Type: "AWS::EC2::Instance"
+    Properties:
+      InstanceType: t3.micro
+      ImageId: ami-08bf489a05e916bbd  # AMI ID for your region
+      SubnetId:  subnet-098f07ee4f34861f1      # Replace with the specific Subnet ID
+      Tags:
+        - Key: Name
+          Value: MySimpleInstance
