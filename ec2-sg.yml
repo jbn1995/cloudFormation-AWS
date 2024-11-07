@@ -24,7 +24,7 @@ Resources:
             <title>Welcome to Nginx on AWS</title>
           </head>
           <body>
-            <h1>SAMPLE WEBPAGE Using CloudFormation</h1>
+            <h1>SAMPLE WEBPAGE Using AWS CloudFormation</h1>
             <p>This is a sample webpage served by Nginx on an AWS EC2 instance.</p>
           </body>
           </html>" > /usr/share/nginx/html/index.html
