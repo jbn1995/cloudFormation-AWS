@@ -50,3 +50,12 @@ Resources:
     Properties:
       AllocationId: !GetAtt ElasticIP.AllocationId
       InstanceId: !Ref SimpleEC2Instance
+  
+S3Bucket:
+    Type: "AWS::S3::Bucket"
+    Properties:
+      BucketName: !Sub "${AWS::StackName}-sample-bucket"
+      AccessControl: Private
+      Tags:
+        - Key: Name
+          Value: DemoS3Bucket
