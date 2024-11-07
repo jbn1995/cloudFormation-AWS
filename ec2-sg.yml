@@ -51,11 +51,11 @@ Resources:
       AllocationId: !GetAtt ElasticIP.AllocationId
       InstanceId: !Ref SimpleEC2Instance
   
-S3Bucket:
+S3bucket:
     Type: "AWS::S3::Bucket"
     Properties:
-      BucketName: !Sub "${AWS::StackName}-sample-bucket"
+      BucketName: !Sub "${AWS::StackName}-sample-bucket"  # Creates a unique bucket name with the stack name
       AccessControl: Private
       Tags:
         - Key: Name
-          Value: DemoS3Bucket
+          Value: SampleS3Bucket
